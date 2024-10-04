@@ -10,14 +10,19 @@ body {
     justify-content: space-between;
 }
 
+.intro, .header, .info, .quote, .ad, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+
 .header {
     background-color: #1F2937;
 
     padding: 36px 120px;
-
-    display: flex;
+    white-space: nowrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -42,9 +47,7 @@ body {
     height: 400px;
     background-color: #1F2937;
     padding: 36px 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     gap: 24px;
 }
 
@@ -73,6 +76,8 @@ body {
 }
 
 .signup {
+    font-weight: 600;
+    white-space: nowrap;
     background-color: #3882F6;
     color: #E5E7EB;
     padding: 8px 20px;
@@ -85,10 +90,8 @@ body {
     background-color: white;
     padding: 36px;
 
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
 }
 
 .info .headline {
@@ -126,10 +129,7 @@ body {
     background-color: #E5E7EB;
     padding: 36px 120px;
 
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 16px;
 }
 
@@ -146,4 +146,49 @@ body {
     font-weight: 900;
     margin-right: 48px;
     align-self: flex-end;
+}
+
+.ad {
+    background-color: #3882F6;
+    padding: 36px;
+    flex-basis: 100px;
+    border-radius: 30px;
+
+    justify-content: space-around;
+    gap: 80px;
+}
+
+.background {
+    background-color: #1F2937;
+    padding: 100px;
+    min-width: 100px;
+}
+
+.ad .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.ad .headline {
+    font-size: 24px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.ad .content {
+    color: #F9FAF8;
+}
+
+.ad .signup {
+    border: 3px solid #F9FAF8;
+    border-radius: 20px;
+}
+
+.footer {
+    background-color: #1F2937;
+    color:#F9FAF8;
+    padding: 36px;
 }
